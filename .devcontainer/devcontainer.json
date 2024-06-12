@@ -1,5 +1,5 @@
 {
-    "name": "Labs Image",
+    "name": "Terraform, Go, Azure CLI, and PowerShell",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
         "ghcr.io/devcontainers/features/terraform:1": {},
@@ -19,16 +19,5 @@
             ]
         }
     },
-    "postCreateCommand": "go version && terraform --version && az --version && pwsh --version",
-    "containerEnv": {
-        "GOROOT": "/go",
-        "GOPATH": "/go/bin"
-    },
-    "mounts": [
-        "source=${localWorkspaceFolder},target=/workspace/${localWorkspaceFolderBasename},type=bind"
-    ],
-    "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
-    "remoteEnv": {
-        "GOPATH": "/go/bin"
-    }
+    "postCreateCommand": "go version && terraform --version && az --version && pwsh --version"
 }
