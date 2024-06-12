@@ -15,9 +15,14 @@
                 "hashicorp.terraform",
                 "golang.Go",
                 "ms-azuretools.vscode-azurecli",
-                "ms-vscode.PowerShell"
-            ]
+                "ms-vscode.PowerShell",
+                "github.copilot",
+                "github.copilot-chat",
+                "hashicorp.hcl"
+            ],
+            "settings": {
+                "editor.formatOnSave": true
+            }
         }
-    },
-    "postCreateCommand": "go version && terraform --version && az --version && pwsh --version"
+    }
 }
